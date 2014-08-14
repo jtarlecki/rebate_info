@@ -24,11 +24,11 @@ import psycopg2
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.jaytarlecki.com',]
 
 
 # Application definition
@@ -79,3 +79,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TASTYPIE_DEFAULT_FORMATS = ['json']
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, "rebates/templates"),
+)

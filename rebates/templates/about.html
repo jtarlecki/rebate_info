@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://jaytarlecki.com/favicon.ico">
+
+    <title>{ rebate_info: api }</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">{rebate_info: api}</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{% url 'rebates.views.start' %}">Home</a></li>
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="mailto:j@jaytarlecki.com?subject={%20rebate_info:%20api%20}%20&body=I%20am%20interested%20in%20hearing%20more%20about%20this%20API.">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+		
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>{rebate_info: api}</h1>
+        <p>
+		This application programming interface provides efficiency incentive information 
+		across the United States.  Consumable responses are returned .json format, containing detailed 
+		information on utility-based rebate programs.
+		</p>
+        
+		<p><a href="https://github.com/jtarlecki/rebate_info#how-to-use" class="btn btn-success btn-lg" role="button">Get started &raquo;</a></p>
+		
+	  </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Background</h2>
+          <p>Whether it is LED lighting, a new boiler, or a premium efficiency motor, efficient equipment consumes 
+		  less energy. However, the most energy efficient products on the market are often too cost prohibitive.  
+		  This API wants to solve this problem.
+		  </p>
+		  <p><a class="btn btn-primary" href="https://github.com/jtarlecki/rebate_info#background" role="button">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <h2>Data</h2>
+          <p>
+		  The data for this project has been sourced from a variety of venues that publish energy efficiency
+		  incentive information.  The data has been linked to geographic data to help resolve the mystery
+		  about rebates in your area.
+		  </p>
+          <p><a class="btn btn-primary" href="https://github.com/jtarlecki/rebate_info#data" role="button">Take a look &raquo;</a></p>
+	   </div>
+		<div class="col-md-3">
+		  <h2>Schema</h2>
+		  <p>
+		  There are many ways to consume this API.  The rebate_info database is fairly large and can
+		  be queried twenty (20) records at a time.  The top-level schema can help give the user an
+		  overview of what data is available
+		  </p>
+		  <p><a class="btn btn-primary" href="{% url 'api_api_top_level' api_name='api' %}" role="button">Schema data &raquo;</a></p>
+	   </div>
+        <div class="col-md-3">
+          <h2>Source</h2>
+		  <p>
+		  Take a look under the hood, or better yet, take a crack at improving the source code!  This is an open source
+		  project using the <a href="https://www.djangoproject.com/">Django</a> framework with 
+		  a <a href="http://www.postgresql.org/">PostgreSQL</a> backend... and a few other things.
+		  </p>
+          <p><a class="btn btn-primary" href="https://github.com/jtarlecki/rebate_info" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+	  
+        <p>Uncopyright <a href="http://jaytarlecki.com/">Jay Tarlecki</a> 2014</p>
+		</br>
+	    <div class="row">
+			<div class="col-xs-2">
+				<a href="https://www.python.org/">
+				<img src="http://www.ozekiphone.com/attachments/751/python_logo_symbol.png" width="100px" height="100px">
+				</a>
+			</div>
+			<div class="col-xs-2">
+				<a href="https://www.djangoproject.com/">
+				<img src="http://petrkout.com/wp-content/uploads/2014/07/django-icon.png" width="100px" height="100px">
+				</a>
+			</div>
+			<div class="col-xs-2">
+				<a href="http://www.postgresql.org/">
+				<img src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" width="100px" height="100px">
+				</a>
+			</div>
+			<div class="col-xs-2">
+			</div>
+			<div class="col-xs-2">
+			</div>
+			<div class="col-xs-2">
+			</div>
+
+		</div>
+
+
+	  </footer>
+    
+	</div> <!-- /container -->
+
+	
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+ 
